@@ -1,0 +1,410 @@
+-| 20221126 11:39:49.787 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 27596 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 11:39:49.807 | b2oweb | 27596 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 11:39:49.808 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 11:39:51.111 | b2oweb | 27596 | WARN  | GOBC-LFMAGN | main                 | org.mybatis.spring.mapper.ClassPathMapperScanner                      -44 | --> No MyBatis mapper was found in '[com.dap.cloud.b2o]' package. Please check your configuration. |
+-| 20221126 11:39:51.247 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor           -40 | --> Post-processing PropertySource instances |
+-| 20221126 11:39:51.248 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:39:51.259 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:39:51.259 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:39:51.260 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:39:51.261 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper |
+-| 20221126 11:39:51.261 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper |
+-| 20221126 11:39:51.261 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:39:51.924 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.filter.DefaultLazyPropertyFilter                 -31 | --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter |
+-| 20221126 11:39:51.940 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.resolver.DefaultLazyPropertyResolver             -30 | --> Found Custom Resolver Bean com.dap.cloud.b2o.web.configuration.EncryptionPropertyResolver@709f0202 with name: encryptablePropertyResolver |
+-| 20221126 11:39:53.232 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:39:53.233 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 11:39:53.233 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 11:39:53.340 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 11:39:53.432 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.d.cloud.b2o.web.configuration.RedisCacheAutoConfiguration           -117 | --> Jedis连接Redis服务器:10.114.10.220:10086,database:0 |
+-| 20221126 11:39:56.038 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Starting ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:39:56.073 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.RefreshScopeRefreshedEventListener                      -47 | --> Refreshing cached encryptable property sources on ServletWebServerInitializedEvent |
+-| 20221126 11:39:56.074 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemProperties refreshed |
+-| 20221126 11:39:56.074 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemEnvironment refreshed |
+-| 20221126 11:39:56.074 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source random refreshed |
+-| 20221126 11:39:56.075 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed |
+-| 20221126 11:39:56.075 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:39:56.075 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:39:56.075 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:39:56.076 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper |
+-| 20221126 11:39:56.083 | b2oweb | 27596 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -61 | --> Started B2OApplication in 6.963 seconds (JVM running for 7.792) |
+-| 20221126 11:49:07.652 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 20492 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 11:49:07.666 | b2oweb | 20492 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 11:49:07.667 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 11:49:08.840 | b2oweb | 20492 | WARN  | GOBC-LFMAGN | main                 | org.mybatis.spring.mapper.ClassPathMapperScanner                      -44 | --> No MyBatis mapper was found in '[com.dap.cloud.b2o]' package. Please check your configuration. |
+-| 20221126 11:49:08.981 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor           -40 | --> Post-processing PropertySource instances |
+-| 20221126 11:49:08.982 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:49:08.983 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:49:08.984 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:49:08.985 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:49:08.985 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper |
+-| 20221126 11:49:08.985 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper |
+-| 20221126 11:49:08.986 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:49:09.535 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.filter.DefaultLazyPropertyFilter                 -31 | --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter |
+-| 20221126 11:49:09.553 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.resolver.DefaultLazyPropertyResolver             -30 | --> Found Custom Resolver Bean com.dap.cloud.b2o.web.configuration.EncryptionPropertyResolver@5cff6b74 with name: encryptablePropertyResolver |
+-| 20221126 11:49:10.956 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:49:10.956 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 11:49:10.957 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 11:49:11.125 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 11:49:11.225 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.d.cloud.b2o.web.configuration.RedisCacheAutoConfiguration           -117 | --> Jedis连接Redis服务器:10.114.10.220:10086,database:0 |
+-| 20221126 11:49:14.060 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Starting ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:49:14.092 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.RefreshScopeRefreshedEventListener                      -47 | --> Refreshing cached encryptable property sources on ServletWebServerInitializedEvent |
+-| 20221126 11:49:14.092 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemProperties refreshed |
+-| 20221126 11:49:14.093 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemEnvironment refreshed |
+-| 20221126 11:49:14.093 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source random refreshed |
+-| 20221126 11:49:14.093 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed |
+-| 20221126 11:49:14.093 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:49:14.093 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:49:14.094 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:49:14.094 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper |
+-| 20221126 11:49:14.107 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -61 | --> Started B2OApplication in 7.165 seconds (JVM running for 7.958) |
+-| 20221126 11:50:20.595 | b2oweb | 20492 | INFO  | GOBC-LFMAGN | http-nio-8085-exec-2 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring DispatcherServlet 'dispatcherServlet' |
+-| 20221126 11:54:47.532 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 24020 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 11:54:47.537 | b2oweb | 24020 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 11:54:47.538 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 11:54:48.763 | b2oweb | 24020 | WARN  | GOBC-LFMAGN | main                 | org.mybatis.spring.mapper.ClassPathMapperScanner                      -44 | --> No MyBatis mapper was found in '[com.dap.cloud.b2o]' package. Please check your configuration. |
+-| 20221126 11:54:48.897 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor           -40 | --> Post-processing PropertySource instances |
+-| 20221126 11:54:48.899 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:54:48.901 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:54:48.901 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:54:48.902 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:54:48.903 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper |
+-| 20221126 11:54:48.903 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper |
+-| 20221126 11:54:48.903 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:54:49.564 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.filter.DefaultLazyPropertyFilter                 -31 | --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter |
+-| 20221126 11:54:49.582 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.resolver.DefaultLazyPropertyResolver             -30 | --> Found Custom Resolver Bean com.dap.cloud.b2o.web.configuration.EncryptionPropertyResolver@53c99b09 with name: encryptablePropertyResolver |
+-| 20221126 11:54:51.053 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:54:51.053 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 11:54:51.054 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 11:54:51.192 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 11:54:51.306 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.d.cloud.b2o.web.configuration.RedisCacheAutoConfiguration           -117 | --> Jedis连接Redis服务器:10.114.10.220:10086,database:0 |
+-| 20221126 11:54:53.894 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Starting ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:54:53.925 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.RefreshScopeRefreshedEventListener                      -47 | --> Refreshing cached encryptable property sources on ServletWebServerInitializedEvent |
+-| 20221126 11:54:53.926 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemProperties refreshed |
+-| 20221126 11:54:53.926 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemEnvironment refreshed |
+-| 20221126 11:54:53.926 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source random refreshed |
+-| 20221126 11:54:53.926 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed |
+-| 20221126 11:54:53.926 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:54:53.927 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:54:53.927 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:54:53.927 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper |
+-| 20221126 11:54:53.943 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -61 | --> Started B2OApplication in 7.129 seconds (JVM running for 7.877) |
+-| 20221126 11:54:54.490 | b2oweb | 24020 | INFO  | GOBC-LFMAGN | http-nio-8085-exec-1 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring DispatcherServlet 'dispatcherServlet' |
+-| 20221126 11:54:54.527 | b2oweb | 24020 | WARN  | GOBC-LFMAGN | http-nio-8085-exec-1 | o.s.web.servlet.mvc.support.DefaultHandlerExceptionResolver           -208 | --> Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'name' for method parameter type String is not present] |
+-| 20221126 11:54:56.062 | b2oweb | 24020 | WARN  | GOBC-LFMAGN | http-nio-8085-exec-4 | o.s.web.servlet.mvc.support.DefaultHandlerExceptionResolver           -208 | --> Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'name' for method parameter type String is not present] |
+-| 20221126 11:55:42.904 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 26852 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 11:55:42.910 | b2oweb | 26852 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 11:55:42.911 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 11:55:44.061 | b2oweb | 26852 | WARN  | GOBC-LFMAGN | main                 | org.mybatis.spring.mapper.ClassPathMapperScanner                      -44 | --> No MyBatis mapper was found in '[com.dap.cloud.b2o]' package. Please check your configuration. |
+-| 20221126 11:55:44.184 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor           -40 | --> Post-processing PropertySource instances |
+-| 20221126 11:55:44.184 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:55:44.186 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:55:44.186 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:55:44.187 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:55:44.187 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper |
+-| 20221126 11:55:44.188 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper |
+-| 20221126 11:55:44.188 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:55:44.774 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.filter.DefaultLazyPropertyFilter                 -31 | --> Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter |
+-| 20221126 11:55:44.790 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.resolver.DefaultLazyPropertyResolver             -30 | --> Found Custom Resolver Bean com.dap.cloud.b2o.web.configuration.EncryptionPropertyResolver@5b202ff with name: encryptablePropertyResolver |
+-| 20221126 11:55:45.989 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:55:45.990 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 11:55:45.990 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 11:55:46.095 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 11:55:46.182 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.d.cloud.b2o.web.configuration.RedisCacheAutoConfiguration           -117 | --> Jedis连接Redis服务器:10.114.10.220:10086,database:0 |
+-| 20221126 11:55:49.205 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Starting ProtocolHandler ["http-nio-8085"] |
+-| 20221126 11:55:49.232 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.RefreshScopeRefreshedEventListener                      -47 | --> Refreshing cached encryptable property sources on ServletWebServerInitializedEvent |
+-| 20221126 11:55:49.233 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemProperties refreshed |
+-| 20221126 11:55:49.234 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source systemEnvironment refreshed |
+-| 20221126 11:55:49.234 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source random refreshed |
+-| 20221126 11:55:49.234 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.j.caching.CachingDelegateEncryptablePropertySource                -55 | --> Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed |
+-| 20221126 11:55:49.234 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper |
+-| 20221126 11:55:49.234 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource |
+-| 20221126 11:55:49.235 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -76 | --> Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource |
+-| 20221126 11:55:49.235 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | c.u.jasyptspringboot.EncryptablePropertySourceConverter               -81 | --> Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper |
+-| 20221126 11:55:49.244 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -61 | --> Started B2OApplication in 6.943 seconds (JVM running for 7.65) |
+-| 20221126 11:55:51.600 | b2oweb | 26852 | INFO  | GOBC-LFMAGN | http-nio-8085-exec-2 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring DispatcherServlet 'dispatcherServlet' |
+-| 20221126 11:59:40.734 | b2oweb | 19748 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 19748 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 11:59:40.740 | b2oweb | 19748 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 11:59:40.742 | b2oweb | 19748 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 11:59:44.711 | b2oweb | 19748 | WARN  | GOBC-LFMAGN | main                 | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext        -591 | --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://www.springframework.org/schema/tx]
+Offending resource: class path resource [transaction.xml]
+ |
+-| 20221126 11:59:44.741 | b2oweb | 19748 | ERROR | GOBC-LFMAGN | main                 | org.springframework.boot.SpringApplication                            -860 | --> Application run failed |
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://www.springframework.org/schema/tx]
+Offending resource: class path resource [transaction.xml]
+
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:111)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:281)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1388)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1371)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:179)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromImportedResources$0(ConfigurationClassBeanDefinitionReader.java:390)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:354)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:156)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.dap.cloud.b2o.B2OApplication.main(B2OApplication.java:11)
+-| 20221126 12:03:01.521 | b2oweb | 22928 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 22928 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 12:03:01.526 | b2oweb | 22928 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 12:03:01.527 | b2oweb | 22928 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 12:03:02.292 | b2oweb | 22928 | ERROR | GOBC-LFMAGN | main                 | org.springframework.boot.SpringApplication                            -860 | --> Application run failed |
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.dap.cloud.b2o.B2OApplication.main(B2OApplication.java:11)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.dap.cloud.b2o.web.configuration.EncryptionPropertyConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: EncryptablePropertyResolver
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 34 common frames omitted
+Caused by: java.lang.ClassNotFoundException: EncryptablePropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 38 common frames omitted
+-| 20221126 12:03:02.298 | b2oweb | 22928 | WARN  | GOBC-LFMAGN | main                 | org.springframework.boot.SpringApplication                            -832 | --> Unable to close ApplicationContext |
+java.lang.IllegalStateException: Failed to introspect Class [com.dap.cloud.b2o.web.configuration.EncryptionPropertyConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:903)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:891)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:878)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:349)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.dap.cloud.b2o.B2OApplication.main(B2OApplication.java:11)
+Caused by: java.lang.NoClassDefFoundError: EncryptablePropertyResolver
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: EncryptablePropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+-| 20221126 12:03:29.327 | b2oweb | 25680 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 25680 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 12:03:29.333 | b2oweb | 25680 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 12:03:29.333 | b2oweb | 25680 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 12:03:30.482 | b2oweb | 25680 | WARN  | GOBC-LFMAGN | main                 | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext        -591 | --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Cannot resolve reference to bean 'allManagerMethod' while setting bean property 'pointcut'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'allManagerMethod': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.aop.aspectj.AspectJExpressionPointcut] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2] |
+-| 20221126 12:03:30.525 | b2oweb | 25680 | ERROR | GOBC-LFMAGN | main                 | org.springframework.boot.SpringApplication                            -860 | --> Application run failed |
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Cannot resolve reference to bean 'allManagerMethod' while setting bean property 'pointcut'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'allManagerMethod': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.aop.aspectj.AspectJExpressionPointcut] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.dap.cloud.b2o.B2OApplication.main(B2OApplication.java:11)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Cannot resolve reference to bean 'allManagerMethod' while setting bean property 'pointcut'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'allManagerMethod': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.aop.aspectj.AspectJExpressionPointcut] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:216)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	... 9 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0': Cannot resolve reference to bean 'allManagerMethod' while setting bean property 'pointcut'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'allManagerMethod': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.aop.aspectj.AspectJExpressionPointcut] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'allManagerMethod': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.aop.aspectj.AspectJExpressionPointcut] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:353)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.aop.aspectj.AspectJExpressionPointcut] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 39 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 41 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.reflect.ReflectionWorld$ReflectionWorldException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 45 common frames omitted
+-| 20221126 12:04:47.378 | b2oweb | 15816 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 15816 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 12:04:47.383 | b2oweb | 15816 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 12:04:47.384 | b2oweb | 15816 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 12:04:49.755 | b2oweb | 15816 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 12:04:49.756 | b2oweb | 15816 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 12:04:49.757 | b2oweb | 15816 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 12:04:49.895 | b2oweb | 15816 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 12:04:50.310 | b2oweb | 15816 | WARN  | GOBC-LFMAGN | main                 | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext        -591 | --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver |
+-| 20221126 12:04:50.314 | b2oweb | 15816 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Stopping service [Tomcat] |
+-| 20221126 12:04:50.349 | b2oweb | 15816 | ERROR | GOBC-LFMAGN | main                 | org.springframework.boot.SpringApplication                            -860 | --> Application run failed |
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318)
+	at com.dap.cloud.b2o.B2OApplication.main(B2OApplication.java:9)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:225)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:177)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+-| 20221126 12:05:25.625 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 2388 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 12:05:25.630 | b2oweb | 2388 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 12:05:25.631 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 12:05:27.972 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 12:05:27.973 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 12:05:27.973 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 12:05:28.095 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 12:05:28.578 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Starting ProtocolHandler ["http-nio-8085"] |
+-| 20221126 12:05:28.617 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -61 | --> Started B2OApplication in 3.606 seconds (JVM running for 4.339) |
+-| 20221126 12:05:36.164 | b2oweb | 2388 | INFO  | GOBC-LFMAGN | http-nio-8085-exec-1 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring DispatcherServlet 'dispatcherServlet' |
+-| 20221126 12:05:59.805 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 16568 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 12:05:59.811 | b2oweb | 16568 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 12:05:59.812 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 12:06:02.084 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 12:06:02.085 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 12:06:02.086 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 12:06:02.183 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 12:06:02.591 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Starting ProtocolHandler ["http-nio-8085"] |
+-| 20221126 12:06:02.626 | b2oweb | 16568 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -61 | --> Started B2OApplication in 3.434 seconds (JVM running for 4.173) |
+-| 20221126 12:06:22.189 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -55 | --> Starting B2OApplication using Java 1.8.0_121 on GOBC-LFMAGN with PID 4432 (E:\svn\dap-cloud-test\target\classes started by 80518 in E:\svn\dap-cloud-test) |
+-| 20221126 12:06:22.194 | b2oweb | 4432 | DEBUG | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -56 | --> Running with Spring Boot v2.4.13, Spring v5.3.13 |
+-| 20221126 12:06:22.195 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -664 | --> No active profile set, falling back to default profiles: default |
+-| 20221126 12:06:24.261 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Initializing ProtocolHandler ["http-nio-8085"] |
+-| 20221126 12:06:24.261 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardService                              -173 | --> Starting service [Tomcat] |
+-| 20221126 12:06:24.262 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | org.apache.catalina.core.StandardEngine                               -173 | --> Starting Servlet engine: [Apache Tomcat/9.0.55] |
+-| 20221126 12:06:24.360 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring embedded WebApplicationContext |
+-| 20221126 12:06:24.790 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | org.apache.coyote.http11.Http11NioProtocol                            -173 | --> Starting ProtocolHandler ["http-nio-8085"] |
+-| 20221126 12:06:24.838 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | main                 | com.dap.cloud.b2o.B2OApplication                                      -61 | --> Started B2OApplication in 3.286 seconds (JVM running for 4.021) |
+-| 20221126 12:06:29.337 | b2oweb | 4432 | INFO  | GOBC-LFMAGN | http-nio-8085-exec-1 | o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]              -173 | --> Initializing Spring DispatcherServlet 'dispatcherServlet' |

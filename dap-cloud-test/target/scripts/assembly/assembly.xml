@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+	<id>bin</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<directory>src/main/resources/conf</directory>
+			<outputDirectory>conf</outputDirectory>
+			<directoryMode>0755</directoryMode>
+			<fileMode>0644</fileMode>
+			<includes>
+			   <include>**</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.outputDirectory}</directory>
+			<outputDirectory>conf</outputDirectory>
+			<directoryMode>0755</directoryMode>
+			<fileMode>0644</fileMode>
+			<includes>
+				<include>config/**</include>
+				<include>META-INF/**</include>
+				<include>spring/**</include>
+				<include>**.properties</include>
+				<include>**.*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>target/scripts/bin</directory>
+			<outputDirectory>bin</outputDirectory>
+			<directoryMode>0755</directoryMode>
+			<fileMode>0755</fileMode>
+		</fileSet>
+		
+	</fileSets>
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>lib</outputDirectory>
+			<directoryMode>0755</directoryMode>
+		</dependencySet>
+	</dependencySets>
+</assembly>
